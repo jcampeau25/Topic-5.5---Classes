@@ -12,11 +12,11 @@ namespace Topic_5._5___Classes
         private Random _generator;
         private ConsoleColor _color;
 
-        public Die()
+        public Die(ConsoleColor colour)
         {
             _generator = new Random();
             _roll = _generator.Next(1, 7);
-            _color = ConsoleColor.Gray;
+            _color = colour;
 
         }
 
